@@ -2,6 +2,10 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## September 23, 2025
+### Feature Updates
+* Improved log messages to make it easier to identify the cause of errors when schedule execution fails.
+
 ## June 24, 2025
 ### Bug Fixes
 * Fixed a bug where parameters (Request Body) had to be entered as JSON objects only.
