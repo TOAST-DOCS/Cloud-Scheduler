@@ -96,6 +96,7 @@
 > ```
 > * 위 응답 본문의 **firstName** 필드를 검증할 경우 JSONPath: `$.firstName`
 > * 위 응답 본문의 **phoneNumbers** 필드의 두 번째 객체의 **type** 필드를 검증할 경우 JSONPath: `$.phoneNumbers[1].type`
+> * [JSONPath 공식 가이드](https://goessner.net/articles/JsonPath/)
     
 
 
