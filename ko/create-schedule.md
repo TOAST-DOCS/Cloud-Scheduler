@@ -77,7 +77,7 @@
             * **모든 조건 일치**: 모든 조건이 ‘True’일 경우 결과를 성공으로 처리합니다.
             * **일부 조건 일치**: 하나라도 ‘True’인 조건이 있으면 결과를 성공으로 처리합니다.
 
-> **Response Body(Optional 포함) 검증 예시**
+> **Response Body(Optional 포함) JSONPath 대상 입력 예시**
 > ```
 > {
 >  "firstName": "NHN",
