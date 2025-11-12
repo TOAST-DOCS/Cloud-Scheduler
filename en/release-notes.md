@@ -2,6 +2,10 @@
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## November 25, 2025
+### Added Features
+* Added the feature to verify results for running schedule
+
 ## September 23, 2025
 ### Feature Updates
 * Improved log messages to make it easier to identify the cause of errors when schedule execution fails.
