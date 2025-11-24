@@ -1,5 +1,9 @@
 # Cloud Schedulerリリースノート
 
+## 2025. 11. 25.
+### 機能追加
+* スケジュール実行結果の検証機能を追加
+
 **Application Service > Cloud Scheduler > リリースノート**
 
 ## 2025. 09. 23.
