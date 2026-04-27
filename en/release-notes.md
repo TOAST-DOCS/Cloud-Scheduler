@@ -1,10 +1,14 @@
-# Release Notes
+## Release Notes
 
 **Application Service > Cloud Scheduler > Release Notes**
 
+## April 28, 2026
+### Feature Updates
+* When creating a schedule or schedule template using the target template, sensitive information is not displayed on the screen.
+
 ## November 25, 2025
 ### Added Features
-* Added the feature to verify results for running schedule
+* Added the feature to verify results for running schedule.
 
 ## September 23, 2025
 ### Feature Updates
@@ -43,11 +47,9 @@
 * Added the schedule template feature
 
 ## November 26, 2024
-
 ### Bug Fixes
 * Fixed a bug that causes schedule execution to fail intermittently
 
 ## Oct 29, 2024
-
 ### Release of a New Service
 * Cloud Scheduler is a service that allows you set various tasks to run on a schedule of your choosing.
