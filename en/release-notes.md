@@ -5,6 +5,7 @@
 ## April 28, 2026
 ### Feature Updates
 * When creating a schedule or schedule template using the target template, sensitive information is not displayed on the screen.
+* When copying a schedule or schedule template using the target template, only non-sensitive information is copied.
 
 ## November 25, 2025
 ### Added Features
@@ -28,27 +29,27 @@
 
 ## March 25, 2025
 ### Added Features
-* Added the target template feature
+* Added the target template feature.
 
 ### Feature Updates
-* Modified to limit the size of parameters to 256 KB when creating and modifying schedules and templates
+* Modified to limit the size of parameters to 256 KB when creating and modifying schedules and templates.
 
 ## January 21, 2025
 ### Feature Updates
-* Added restrictions when creating schedules
+* Added restrictions when creating schedules.
   * Changed the maximum length of a URL to 255 characters when creating and modifying schedules.
   * Changed the maximum size of a parameter to 56 KB when creating and modifying schedules.
   * Changed the start date when creating and modifying schedules to only be set to 5 minutes after the current time.
-* Made modifications to ignore spaces before and after search terms when searching for schedules and templates
-* Changed error messages
+* Made modifications to ignore spaces before and after search terms when searching for schedules and templates.
+* Changed error messages.
 
 ## December 24, 2024
 ### Added Features
-* Added the schedule template feature
+* Added the schedule template feature.
 
 ## November 26, 2024
 ### Bug Fixes
-* Fixed a bug that causes schedule execution to fail intermittently
+* Fixed a bug that causes schedule execution to fail intermittently.
 
 ## Oct 29, 2024
 ### Release of a New Service
