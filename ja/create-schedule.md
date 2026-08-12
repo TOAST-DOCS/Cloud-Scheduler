@@ -17,7 +17,7 @@
 <a id="create-schedule-2"></a>
 ## スケジュールを作成する { #create-schedule-2 }
 
-スケジュールを作成するには、まず、Cloud Schedulerサービスを有効にする必要があります。[プロジェクトサービス有効化ガイド](https://docs.nhncloud.com/ja/nhncloud/ja/console-guide/#_20)を参考にしてCloud Schedulerサービスを有効にしてください。
+スケジュールを作成するには、まず、Cloud Schedulerサービスを有効にする必要があります。[プロジェクトサービス有効化ガイド](https://docs.nhncloud.com/ja/nhncloud/ja/console-guide/#project-services)を参考にしてCloud Schedulerサービスを有効にしてください。
 
 1. NHN Cloudコンソールで**Application Service > Cloud Scheduler**をクリックしてください。
 
@@ -116,7 +116,7 @@
     
 !!! danger "注意"
     * Cron式は韓国標準時(UTC+09:00)基準で動作します。例えば、 '0 9 \* \* \*'と入力すると、毎日韓国時間で午前9時に作業が実行されます。
-    * 繰り返しタイプを**Rate**に選択した場合、スケジュール実行は**開始日時**と**Rate**値によって変更されることがあります。[Rateスケジュールの作動方式](create-schedule/#rate)および[スケジュール実行例](create-schedule/#_3)を参考に正しく設定してください。   
+    * 繰り返しタイプを**Rate**に選択した場合、スケジュール実行は**開始日時**と**Rate**値によって変更されることがあります。[Rateスケジュールの作動方式](create-schedule/#how-rate-schedules-work)および[スケジュール実行例](create-schedule/#schedule-execution-examples)を参考に正しく設定してください。   
    
 <a id="how-rate-schedules-work"></a>
 ## Rateスケジュールの作動方式 { #how-rate-schedules-work }
