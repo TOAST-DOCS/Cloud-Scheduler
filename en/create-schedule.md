@@ -16,7 +16,7 @@ This document explains the steps to create a schedule in detail.
 <a id="create-schedule-2"></a>
 ## Create Schedule { #create-schedule-2 }
 
-To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#guide-to-enabling-project-services) to enable the Cloud Scheduler service.
+To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#project-services) to enable the Cloud Scheduler service.
 
 1. In the NHN Cloud console, click **Application Service > Cloud Scheduler**.
 
@@ -115,7 +115,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
 
 !!! danger "Caution"
     * Cron expressions work based on UTC+09:00. For example, if you enter '0 9 \* \* \*', the task will run every day at 9:00 AM UTC.
-    * If you select the recurring type as **Rate**, the schedule execution can change depending on the value of  **Started on** and **Rate**. See [How Rate schedules work](create-schedule/#rate) and [Schedule Execution Examples](create-schedule/#_3) to set them up correctly. 
+    * If you select the recurring type as **Rate**, the schedule execution can change depending on the value of  **Started on** and **Rate**. See [How Rate schedules work](create-schedule/#how-rate-schedules-work) and [Schedule Execution Examples](create-schedule/#schedule-execution-examples) to set them up correctly. 
 
 <a id="how-rate-schedules-work"></a>
 ## How Rate Schedules Work { #how-rate-schedules-work }
