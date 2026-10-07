@@ -16,7 +16,7 @@ This document explains the steps to create a schedule in detail.
 <a id="create-schedule-2"></a>
 ## Create Schedule { #create-schedule-2 }
 
-To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#project-services) to enable the Cloud Scheduler service.
+To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](/nhncloud/en/console-guide/#project-services) to enable the Cloud Scheduler service.
 
 1. In the NHN Cloud console, click **Application Service > Cloud Scheduler**.
 
