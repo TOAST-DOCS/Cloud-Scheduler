@@ -1,4 +1,4 @@
-<!-- pre-align:aligned sig=9a6130697b7f -->
+<!-- pre-align:aligned sig=c0752468e6aa -->
 
 <a id="release-notes"></a>
 ## Cloud Scheduler 릴리스 노트 { #release-notes }
