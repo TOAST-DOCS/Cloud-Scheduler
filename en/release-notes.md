@@ -1,9 +1,17 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=9a6130697b7f -->
 
 <a id="release-notes"></a>
 ## Release Notes { #release-notes }
 
 **Application Service > Cloud Scheduler > Release Notes**
+## October 27, 2026
+### Added Features
+* Added a feature to receive schedule execution results via email notifications.
+
+### Feature Updates
+* Extended the queryable period for the schedule execution history from 30 days to 60 days.
 
 <a id="april-28-2026"></a>
 ## April 28, 2026 { #april-28-2026 }
