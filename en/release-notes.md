@@ -6,11 +6,14 @@
 ## Release Notes { #release-notes }
 
 **Application Service > Cloud Scheduler > Release Notes**
-## October 27, 2026
-### Added Features
+<a id="october-27-2026"></a>
+## October 27, 2026 { #october-27-2026 }
+<a id="october-27-2026-added-features"></a>
+### Added Features { #october-27-2026-added-features }
 * Added a feature to receive schedule execution results via email notifications.
 
-### Feature Updates
+<a id="october-27-2026-feature-updates"></a>
+### Feature Updates { #october-27-2026-feature-updates }
 * Extended the queryable period for the schedule execution history from 30 days to 60 days.
 
 <a id="april-28-2026"></a>
