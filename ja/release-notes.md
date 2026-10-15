@@ -6,11 +6,14 @@
 ## Cloud Schedulerリリースノート { #release-notes }
 
 **Application Service > Cloud Scheduler > リリースノート**
-## 2026. 10. 27.
-### 機能追加
+<a id="october-27-2026"></a>
+## 2026. 10. 27. { #october-27-2026 }
+<a id="october-27-2026-added-features"></a>
+### 機能追加 { #october-27-2026-added-features }
 * スケジュールの実行結果をメールで受け取ることができる通知送信機能が追加されます。
 
-### 機能改善/変更
+<a id="october-27-2026-feature-updates"></a>
+### 機能改善/変更 { #october-27-2026-feature-updates }
 * スケジュール実行履歴の照会可能期間を30日から60日に延長しました。
 
 <a id="april-28-2026"></a>
