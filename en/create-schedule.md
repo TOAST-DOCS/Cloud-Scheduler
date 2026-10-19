@@ -83,9 +83,9 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
             * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
             * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
 
-    * **Notification sent**: You can receive schedule execution results by email. Selecting **Sent** displays the **Send Trigger** and **Reason for failure included** fields.
-        * **Send Trigger**: Select the execution results for which you want to receive notifications. You must select at least one of **Success** and **On failure**.
-        * **Reason for failure included**: Select whether to include the failure reason in the notification. This field is displayed only when **On failure** is selected in **Send Trigger**.
+    * **Notification**: You can receive schedule execution results by email. Selecting **Settings** displays the **Send Criteria** and **Include Failure Reason** fields.
+        * **Send Criteria**: Select the execution results for which you want to receive notifications. You must select at least one of **On Success** and **On Failure**.
+        * **Include Failure Reason**: Select whether to include the failure reason in the notification. This field is displayed only when **On Failure** is selected in **Send Criteria**.
 
 > **Example of Response Body (include Optional) JSONPath Target Input**
 > ```
