@@ -1,0 +1,7 @@
+# .docs-workflow — 문서 파이프라인 설정
+# 설명: https://content-agent.cloud.toastoven.net/?tab=help&help=docs-workflow
+
+# 콘솔 용어집 — ko 문서가 굵게(**…**) 쓴 콘솔 UI 라벨을 콘솔 화면의 실제 문자열로 번역한다.
+# Cloud Scheduler 콘솔 문자열은 다국어 DB(TOASTCloud/console-i18n-translate)의 두 카테고리에 있다.
+console_glossary:
+  - i18n: [SERVICE_SCHEDULER, SERVICE_SCHEDULER_SERVER]
