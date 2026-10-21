@@ -117,7 +117,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * You can use the template feature to quickly enter preset information. See [Manage Template](manage-schedule-template).
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
-    * Execution result notifications are sent to the targets specified under **Manage notifications > Cloud Scheduler > Schedule Result Sent**.
+    * Execution result notifications are sent to the targets specified under **Manage notifications > Cloud Scheduler > Execution Result Notification**.
     * Notifications are sent when the schedule execution ends. If a retry policy is configured, only one notification is sent after all retries are complete, with the final result.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
