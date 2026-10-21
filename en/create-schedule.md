@@ -83,9 +83,10 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
             * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
             * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
 
-    * **Notification**: You can receive schedule execution results by email. Selecting **Settings** displays the **Send Criteria** and **Include Failure Reason** fields.
-        * **Send Criteria**: Select the execution results for which you want to receive notifications. You must select at least one of **On Success** and **On Failure**.
-        * **Include Failure Reason**: Select whether to include the failure reason in the notification. This field is displayed only when **On Failure** is selected in **Send Criteria**.
+    * **Notification sent**: Send schedule execution result notifications to the configured channel. Setting it to **Sent** displays the **Sent channels** and **Send Trigger** fields.
+        * **Sent channels**: The channel to send notifications to. Only Email is supported.
+        * **Send Trigger**: Select the execution results for which notifications are sent. You must select at least one of **Success** and **On failure**. If you select both, results are sent for every run.
+        * **Reason for failure included**: Select whether to include the reason in failure notifications. This field is displayed only when **On failure** is selected in **Send Trigger**. Only a cleaned-up reason for failure is included instead of the original error message.
 
 > **Example of Response Body (include Optional) JSONPath Target Input**
 > ```
@@ -116,7 +117,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * You can use the template feature to quickly enter preset information. See [Manage Template](manage-schedule-template).
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
-    * Execution result notifications are sent to the notification recipients registered in the project. Recipients can be managed in the project notification settings in the NHN Cloud console.
+    * Execution result notifications are sent to the targets specified under **Manage notifications > Cloud Scheduler > Schedule Result Sent**.
     * Notifications are sent when the schedule execution ends. If a retry policy is configured, only one notification is sent after all retries are complete, with the final result.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
