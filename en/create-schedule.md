@@ -82,11 +82,10 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
         * **Condition Combination Method**: select how to combine multiple validation conditions.
             * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
             * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
-
-    * **Notification sent**: Send schedule execution result notifications to the configured channel. Setting it to **Sent** displays the **Sent channels** and **Send Trigger** fields.
-        * **Sent channels**: The channel to send notifications to. Only Email is supported.
-        * **Send Trigger**: Select the execution results for which notifications are sent. You must select at least one of **Success** and **On failure**. If you select both, results are sent for every run.
-        * **Reason for failure included**: Select whether to include the reason in failure notifications. This field is displayed only when **On failure** is selected in **Send Trigger**. Only a cleaned-up reason for failure is included instead of the original error message.
+    * **Send Notification**: Sends notifications of schedule execution results to the configured channel. When you select **Send**, the **Delivery Channel** and **Send Criteria** fields are displayed.
+        * **Delivery Channel**: The channel to send notifications. Only Email is supported.
+        * **Send Criteria**: Select the execution result for which to send notifications. You must select at least one of **On Success** and **On Failure**; selecting both sends a notification for every execution result.
+        * **Include Failure Reason**: Select whether to include the reason in failure notifications. This field is displayed only when **On Failure** is selected under **Send Criteria**. The notification is sent with only the refined failure reason instead of the original error message.
 
 > **Example of Response Body (include Optional) JSONPath Target Input**
 > ```
