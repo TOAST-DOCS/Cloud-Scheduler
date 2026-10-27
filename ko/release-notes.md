@@ -1,9 +1,19 @@
-<!-- pre-align:aligned sig=9a6130697b7f -->
+<!-- pre-align:aligned sig=c0752468e6aa -->
 
 <a id="release-notes"></a>
 ## Cloud Scheduler 릴리스 노트 { #release-notes }
 
 **Application Service > Cloud Scheduler > 릴리스 노트**
+
+<a id="october-27-2026"></a>
+## 2026. 10. 27. { #october-27-2026 }
+<a id="october-27-2026-added-features"></a>
+### 기능 추가 { #october-27-2026-added-features }
+* 일정 실행 결과를 이메일로 받아 볼 수 있는 알림 전송 기능이 추가됩니다.
+
+<a id="october-27-2026-feature-updates"></a>
+### 기능 개선/변경 { #october-27-2026-feature-updates }
+* 일정 실행 이력 조회 가능 기간을 30일에서 60일로 늘렸습니다.
 
 <a id="april-28-2026"></a>
 ## 2026. 04. 28. { #april-28-2026 }

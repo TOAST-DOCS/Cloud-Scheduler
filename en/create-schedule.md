@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=d30b3e46c73a -->
 
 <a id="create-schedule"></a>
@@ -9,14 +11,14 @@ A schedule consists of basic information, target info, and additional settings.
 
 * Basic information: Select the type, cycle, and start/end dates for the schedule to execute.
 * Target info: Enter the API information and HTTP methods, headers, and parameters called by the schedule.
-* Additional settings: Set whether to enable/disable the schedule and the retry policy (number of times, interval).
+* Additional settings: Set whether to enable/disable the schedule, the retry policy (number of times, interval), and whether to send execution result notifications.
 
 This document explains the steps to create a schedule in detail.
 
 <a id="create-schedule-2"></a>
 ## Create Schedule { #create-schedule-2 }
 
-To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](https://docs.nhncloud.com/en/nhncloud/en/console-guide/#project-services) to enable the Cloud Scheduler service.
+To create a schedule, you must first enable the Cloud Scheduler service. See [Guide to Enabling Project Services ](/nhncloud/en/console-guide/#project-services) to enable the Cloud Scheduler service.
 
 1. In the NHN Cloud console, click **Application Service > Cloud Scheduler**.
 
@@ -81,6 +83,11 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
             * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
             * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
 
+    * **Notification sent**: Send schedule execution result notifications to the configured channel. Setting it to **Sent** displays the **Sent channels** and **Send Trigger** fields.
+        * **Sent channels**: The channel to send notifications to. Only Email is supported.
+        * **Send Trigger**: Select the execution results for which notifications are sent. You must select at least one of **Success** and **On failure**. If you select both, results are sent for every run.
+        * **Reason for failure included**: Select whether to include the reason in failure notifications. This field is displayed only when **On failure** is selected in **Send Trigger**. Only a cleaned-up reason for failure is included instead of the original error message.
+
 > **Example of Response Body (include Optional) JSONPath Target Input**
 > ```
 > {
@@ -110,8 +117,9 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * You can use the template feature to quickly enter preset information. See [Manage Template](manage-schedule-template).
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
+    * Execution result notifications are sent to the targets specified under **Manage notifications > Cloud Scheduler > Execution Result Notification**.
+    * Notifications are sent when the schedule execution ends. If a retry policy is configured, only one notification is sent after all retries are complete, with the final result.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
-
 
 !!! danger "Caution"
     * Cron expressions work based on UTC+09:00. For example, if you enter '0 9 \* \* \*', the task will run every day at 9:00 AM UTC.

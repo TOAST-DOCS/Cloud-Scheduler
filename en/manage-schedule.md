@@ -1,3 +1,5 @@
+<!-- machine_translated: true -->
+
 <!-- pre-align:aligned sig=45254daa27ca -->
 
 <a id="manage-schedule"></a>
@@ -49,5 +51,5 @@ You can select a schedule to view its information in the bottom area of the scre
     Sensitive information in the target template is not provided in its original form for security reasons.
 
 * **Execution History**: Show when the schedule is executed, whether it succeeded or failed, whether it was retried, and the execution log.
-    * Execution history is available for viewing for up to 30 days.
+    * Execution history can be viewed for up to 60 days.
 * **Additional Settings**: Check the retry policy information.
