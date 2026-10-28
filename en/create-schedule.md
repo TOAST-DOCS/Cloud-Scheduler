@@ -85,6 +85,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
 
     * **Notification sent**: Send schedule execution result notifications to the configured channel. Setting it to **Sent** displays the **Sent channels** and **Send Trigger** fields.
         * **Sent channels**: The channel to send notifications to. Only Email is supported.
+            * The notification recipient is specified not in the schedule settings screen, but in **Project Dashboard > Notification Management > Cloud Scheduler > Schedule Execution Result Notification**.
         * **Send Trigger**: Select the execution results for which notifications are sent. You must select at least one of **Success** and **On failure**. If you select both, results are sent for every run.
         * **Reason for failure included**: Select whether to include the reason in failure notifications. This field is displayed only when **On failure** is selected in **Send Trigger**. Only a cleaned-up reason for failure is included instead of the original error message.
 
@@ -117,7 +118,7 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
     * You can use the template feature to quickly enter preset information. See [Manage Template](manage-schedule-template).
     * Cron expressions are built with five fields, which are in the order "Minute Hour Day Month Day of Week".
     * For smooth schedule execution, set the start date at least 5 minutes ahead of the current time.
-    * Execution result notifications are sent to the targets specified under **Manage notifications > Cloud Scheduler > Execution Result Notification**.
+    * Execution result notifications are sent to the targets specified under **Project Dashboard > Notification Management > Cloud Scheduler > Execution Result Notification**.
     * Notifications are sent when the schedule execution ends. If a retry policy is configured, only one notification is sent after all retries are complete, with the final result.
     * It can take up to 30 seconds for the schedule you create to be reflected, so changes to the schedule contents, including activation/deactivation, may fail during that time.
 
