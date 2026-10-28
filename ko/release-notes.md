@@ -10,6 +10,7 @@
 <a id="october-27-2026-added-features"></a>
 ### 기능 추가 { #october-27-2026-added-features }
 * 일정 실행 결과를 이메일로 받아 볼 수 있는 알림 전송 기능이 추가됩니다.
+  * 알림 수신 대상은 **프로젝트 대시보드 > 알림 관리**에서 지정합니다.
 
 <a id="october-27-2026-feature-updates"></a>
 ### 기능 개선/변경 { #october-27-2026-feature-updates }
