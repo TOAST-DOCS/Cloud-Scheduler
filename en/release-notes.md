@@ -12,6 +12,8 @@
 ### Added Features { #october-27-2026-added-features }
 * Added a feature to receive schedule execution results via email notifications.
 
+  * The notification recipient is configured in **Project Dashboard > Notification Management**.
+
 <a id="october-27-2026-feature-updates"></a>
 ### Feature Updates { #october-27-2026-feature-updates }
 * Extended the queryable period for the schedule execution history from 30 days to 60 days.
