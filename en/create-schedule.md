@@ -64,24 +64,24 @@ To create a schedule, you must first enable the Cloud Scheduler service. See [Gu
         * API success vary depending on timeout and result validation conditions.
         * **Retry Interval**: Enter the interval to retry failed schedules. You can set a minimum of 1 minute and a maximum of 60 minutes.
         * **Maximum Number of Retries**: Enter the maximum number of retries. You can set a maximum of 5 retries.
-   * **Timeout**: enter the timeout time of the API call. If the API execution time exceeds the set time, the call will fail.
-    * **Result Validation**: You can set validation criteria for API call responses. Selecting **User Setting** displays the **Result Validation Conditions** and **Condition Combination Method** fields.
-        * **Result Validation Conditions**: set result validation conditions by entering the validation type, target, value, and operator. You can add up to 10 conditions.
-            * **Validation Type**: select one of the following:
-                * **HTTP Status Code**: validate the HTTP status code of response.
-                * **Response Body**: validate the response body.
-                * **Response Body(Optional)**: validate the response body. If the validation field entered in the target does not exist in the response body, it is treated as 'True'.
-                * **Header**: validate a response header.
-            * **Target**: enter the fields to be validated according to the validation type. Up to 50 characeters are allowed.
-                * **HTTP Status Code**: disabled as no target to enter exists.
-                * **Response Body**: enter JSONPath to specify the field to be validated. For more information, refer to the example below.
-                * **Response Body(Optional)**: enter JSONPath to specify the field to be validated. For more information, refer to the example below.
-                * **Header**: enter the header name to be validated.
-            * **Value**: enter the value of the target to be validated. up to 20 characters are allowed. When validating **HTTP Status Code**, between 100 and 599 characters are allowed.
-            * **Operator**: select an operator to use when validating results.
-        * **Condition Combination Method**: select how to combine multiple validation conditions.
-            * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
-            * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
+    * **Timeout**: enter the timeout time of the API call. If the API execution time exceeds the set time, the call will fail.
+     * **Result Validation**: You can set validation criteria for API call responses. Selecting **User Setting** displays the **Result Validation Conditions** and **Condition Combination Method** fields.
+         * **Result Validation Conditions**: set result validation conditions by entering the validation type, target, value, and operator. You can add up to 10 conditions.
+             * **Validation Type**: select one of the following:
+                 * **HTTP Status Code**: validate the HTTP status code of response.
+                 * **Response Body**: validate the response body.
+                 * **Response Body(Optional)**: validate the response body. If the validation field entered in the target does not exist in the response body, it is treated as 'True'.
+                 * **Header**: validate a response header.
+             * **Target**: enter the fields to be validated according to the validation type. Up to 50 characeters are allowed.
+                 * **HTTP Status Code**: disabled as no target to enter exists.
+                 * **Response Body**: enter JSONPath to specify the field to be validated. For more information, refer to the example below.
+                 * **Response Body(Optional)**: enter JSONPath to specify the field to be validated. For more information, refer to the example below.
+                 * **Header**: enter the header name to be validated.
+             * **Value**: enter the value of the target to be validated. up to 20 characters are allowed. When validating **HTTP Status Code**, between 100 and 599 characters are allowed.
+             * **Operator**: select an operator to use when validating results.
+         * **Condition Combination Method**: select how to combine multiple validation conditions.
+             * **All Conditions Matched**: if all conditions are 'True', the result is treated as success.
+             * **Some Conditions Matched**: if any condition is 'True', the result is treated as success.
 
     * **Notification sent**: Send schedule execution result notifications to the configured channel. Setting it to **Sent** displays the **Sent channels** and **Send Trigger** fields.
         * **Sent channels**: The channel to send notifications to. Only Email is supported.
